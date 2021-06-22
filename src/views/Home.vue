@@ -13,6 +13,15 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  created() {
+    var arr = [1,2,3,["a","b","c"]];
+    var arr1 = this.$deepCopy(arr);
+    console.log(arr1);//[1, 2, 3, Array(3)]
+
+    arr[3].push("d");
+    console.log(arr);// [1, 2, 3, Array(4)]
+    console.log(arr1);// [1, 2, 3, Array(3)]
   }
-}
+} 
 </script>

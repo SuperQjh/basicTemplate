@@ -3,13 +3,14 @@ import VueRouter from 'vue-router'
 import Test from '../views/Test.vue'
 import Excel from '../views/Excel.vue'
 import Movies from '../views/Movies.vue'
+import Home from '../views/Home/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   { 
     path: '/', 
-    redirect: '/Movies'
+    redirect: '/Home'
  },
   {
     path: '/test',
@@ -25,6 +26,11 @@ const routes = [
     path: '/movies',
     name: 'Movies',
     component: Movies
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: Home
   },
 ]
 

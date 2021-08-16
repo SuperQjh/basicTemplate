@@ -2,13 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Test from '../views/Test.vue'
 import Excel from '../views/Excel.vue'
+import Movies from '../views/Movies.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   { 
     path: '/', 
-    redirect: '/test'
+    redirect: '/Movies'
  },
   {
     path: '/test',
@@ -19,6 +20,11 @@ const routes = [
     path: '/excel',
     name: 'Excel',
     component: Excel
+  },
+  {
+    path: '/movies',
+    name: 'Movies',
+    component: Movies
   },
 ]
 
